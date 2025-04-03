@@ -1,0 +1,77 @@
+extends layout
+
+block content
+  section.hero
+    .container
+      h1 Welcome to #{title}
+      p A modern Express application with a stunning dark theme design
+      .hero-buttons
+        a.btn(href='#features')
+          i.fas.fa-rocket
+          span  Explore Features
+        a.btn(href='#', style='background: transparent; border: 2px solid var(--accent-color); margin-left: 15px; box-shadow: none;')
+          i.fas.fa-code
+          span  View Source
+
+  section#features.section
+    .container
+      h2.section-title Our Features
+      .grid
+        .card
+          .card-icon-wrapper(style='background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.2)); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;')
+            i.fas.fa-rocket.fa-2x(style='color: var(--accent-color);')
+          h3.card-title Fast & Reliable
+          p Our Express application is optimized for speed and reliability, ensuring your users have a seamless experience with lightning-fast load times and stable performance.
+
+        .card
+          .card-icon-wrapper(style='background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.2)); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;')
+            i.fas.fa-mobile-alt.fa-2x(style='color: var(--secondary-color);')
+          h3.card-title Responsive Design
+          p The application is fully responsive with a beautiful dark theme that works perfectly on all devices, from mobile phones to desktop computers, providing a consistent experience.
+
+        .card
+          .card-icon-wrapper(style='background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(26, 188, 156, 0.2)); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;')
+            i.fas.fa-shield-alt.fa-2x(style='color: var(--primary-color);')
+          h3.card-title Secure & Modern
+          p We implement the latest security practices and modern design principles to keep your data safe while providing an aesthetically pleasing user interface.
+
+  section.section
+    .container
+      h2.section-title Why Choose Us
+      .grid
+        .card(style='border-top: 3px solid var(--primary-color);')
+          h3.card-title Expert Development
+          p Our team consists of experienced developers who are passionate about creating high-quality web applications with cutting-edge design and functionality.
+          a(href='#', style='color: var(--accent-color); display: inline-block; margin-top: 1rem; font-weight: 500;') Learn More
+            i.fas.fa-arrow-right(style='margin-left: 5px; font-size: 0.8rem;')
+
+        .card(style='border-top: 3px solid var(--secondary-color);')
+          h3.card-title Modern Technologies
+          p We use the latest technologies and frameworks to ensure your application is future-proof, scalable, and features a stunning dark theme design that stands out.
+          a(href='#', style='color: var(--accent-color); display: inline-block; margin-top: 1rem; font-weight: 500;') Learn More
+            i.fas.fa-arrow-right(style='margin-left: 5px; font-size: 0.8rem;')
+
+        .card(style='border-top: 3px solid var(--accent-color);')
+          h3.card-title Dedicated Support
+          p Our support team is always ready to help you with any questions or issues you might have, ensuring your application runs smoothly and looks beautiful.
+          a(href='#', style='color: var(--accent-color); display: inline-block; margin-top: 1rem; font-weight: 500;') Learn More
+            i.fas.fa-arrow-right(style='margin-left: 5px; font-size: 0.8rem;')
+
+  section.section(style='position: relative; overflow: hidden;')
+    .container
+      h2.section-title Get Started Today
+      .card(style='max-width: 700px; margin: 0 auto; text-align: center; background: linear-gradient(135deg, rgba(142, 68, 173, 0.05), rgba(52, 152, 219, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);')
+        h3(style='color: var(--accent-color); margin-bottom: 1.5rem; font-size: 1.8rem;') Ready for a Beautiful Dark Theme?
+        p Ready to take your web application to the next level with a stunning dark theme design? Contact us today to discuss your project and see how we can transform your user experience.
+        .cta-buttons(style='margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;')
+          a.btn(href='#', style='margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;')
+            i.fas.fa-envelope
+            span Contact Us
+          a.btn(href='#', style='margin-top: 1rem; background: transparent; border: 2px solid var(--accent-color); display: flex; align-items: center; justify-content: center; gap: 0.5rem;')
+            i.fas.fa-phone
+            span Call Now
+
+    .floating-shapes
+      .shape.circle(style='position: absolute; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle at center, rgba(142, 68, 173, 0.1), transparent 70%); top: 20%; left: 10%; animation: float 8s infinite ease-in-out;')
+      .shape.circle(style='position: absolute; width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle at center, rgba(52, 152, 219, 0.1), transparent 70%); bottom: 20%; right: 10%; animation: float 6s infinite ease-in-out reverse;')
+      .shape.circle(style='position: absolute; width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle at center, rgba(26, 188, 156, 0.1), transparent 70%); top: 60%; right: 20%; animation: float 10s infinite ease-in-out 2s;')
